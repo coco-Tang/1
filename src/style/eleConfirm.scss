@@ -1,0 +1,30 @@
+/* confirm框按钮样式 -- #859 fix, 但有所保留 */
+.el-message-box__btns {
+    display: flex;
+    // justify-content: flex-end;
+    justify-content: center;
+    .el-button{
+        width: 100px;
+        height: 30px;
+    }
+    button:first-child { // 取消
+        order: 1;
+        margin-left: 10px;
+        background-image: none;
+        border: solid 1px #48a2fe;
+        color: #48a2fe;
+        &:hover {
+            color: #fff;
+            background-image: -webkit-linear-gradient(top,#36ace5,#4683e5);
+            // border: 1px solid #48a2fe;
+        }
+    }
+    button:last-child { // 确定
+        margin-left: 0;
+    }
+    .el-button {
+        // padding: 5px 10px;
+        padding: 8px 20px;
+        box-shadow: none;
+    }
+}

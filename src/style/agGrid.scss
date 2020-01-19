@@ -1,0 +1,190 @@
+/*
+* @Author: cjq
+* @Date:   2019-04-02 10:23:14
+* @Last Modified by:   Administrator
+* @Last Modified time: 2019-10-30 13:35:29
+*/
+.ag-root-wrapper .ag-watermark {
+    display: none !important;
+}
+.ag-row-odd {
+    &.ag-row-selected {
+        // background-color: #fff;
+        background-color: #ffe3a8 !important;
+    }
+}
+
+.ag-row-even {
+    &.ag-row-selected {
+        // background-color: #fafafb;
+        background-color: #ffe3a8 !important;
+    }
+
+    background-color: #f9f9fa;
+}
+
+.ag-row.ag-row-hover {
+    background-color: #f0efef;
+}
+
+.ag-theme-material .ag-cell-focus {
+    border: 1px solid transparent !important;
+    // outline: none;
+}
+
+.ag-cell:focus,
+.ag-theme-material .ag-cell {
+    // border: none !important;
+    outline: none;
+}
+
+.ag-selection-checkbox{
+  span{
+    top: 0px !important;
+  }
+}
+
+.ag-theme-material {
+    .ag-header {
+        color: #262a26 !important;
+        background-color: #dadbe6 !important;
+    }
+
+    .ag-row {
+        color: #535353;
+    }
+
+    .ag-header-cell-text,
+    .ag-cell {
+        line-height: 40px;
+    }
+
+    .ag-header-cell,
+    .ag-header-group-cell {
+        line-height: 44px;
+    }
+
+    .ag-header-cell-menu-button .ag-icon-menu {
+        height: 40px !important;
+    }
+
+    .ag-icon-checkbox-checked:empty {
+        // background-image: url('../static/images/account.png')
+        width: 14px;
+        height: 14px;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgogPGc+CiAgPHRpdGxlPmJhY2tncm91bmQ8L3RpdGxlPgogIDxyZWN0IGZpbGw9Im5vbmUiIGlkPSJjYW52YXNfYmFja2dyb3VuZCIgaGVpZ2h0PSI0MDIiIHdpZHRoPSI1ODIiIHk9Ii0xIiB4PSItMSIvPgogPC9nPgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIGlkPSJzdmdfMSIgZmlsbD0iIzQwOWVmZiIgZD0ibTE2LDBsLTE0LDBhMiwyIDAgMCAwIC0yLDJsMCwxNGEyLDIgMCAwIDAgMiwybDE0LDBhMiwyIDAgMCAwIDIsLTJsMCwtMTRhMiwyIDAgMCAwIC0yLC0yem0tOSwxNGwtNSwtNWwxLjQxLC0xLjQxbDMuNTksMy41OGw3LjU5LC03LjU5bDEuNDEsMS40MmwtOSw5eiIvPgogPC9nPgo8L3N2Zz4=') !important;
+        background-size: 14px 14px;
+    }
+    
+    .ag-icon-checkbox-unchecked,
+    .ag-icon-checkbox-indeterminate {
+        width: 14px !important;
+        // height: 14px !important;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgogPGc+CiAgPHRpdGxlPmJhY2tncm91bmQ8L3RpdGxlPgogIDxyZWN0IGZpbGw9Im5vbmUiIGlkPSJjYW52YXNfYmFja2dyb3VuZCIgaGVpZ2h0PSI0MDIiIHdpZHRoPSI1ODIiIHk9Ii0xIiB4PSItMSIvPgogPC9nPgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIGlkPSJzdmdfMSIgZmlsbD0iIzk5OTk5OSIgZD0ibTE2LDJsMCwxNGwtMTQsMGwwLC0xNGwxNCwwem0wLC0ybC0xNCwwYy0xLjEsMCAtMiwwLjkgLTIsMmwwLDE0YzAsMS4xIDAuOSwyIDIsMmwxNCwwYzEuMSwwIDIsLTAuOSAyLC0ybDAsLTE0YzAsLTEuMSAtMC45LC0yIC0yLC0yeiIvPgogPC9nPgo8L3N2Zz4=') !important;
+        background-size: 14px 14px !important;
+    }
+    .ag-primary-cols-header-panel {
+        // .ag-icon-checkbox-checked:empty {
+        //     transform: translateY(1px)
+        // }
+        .ag-icon.ag-icon-checkbox-checked {
+            transform: translateY(13px)
+        }
+        .ag-icon-checkbox-unchecked,
+        .ag-icon-checkbox-indeterminate {
+            transform: translateY(11px)
+        }
+    }
+    .ag-header-select-all {
+        .ag-checkbox-checked {
+            .ag-icon.ag-icon-checkbox-checked {
+                transform: translateY(-5px);
+            }
+        }
+    }
+    .ag-primary-cols-header-panel > div {
+        padding-top: 0 !important;
+    }
+}
+
+.ag-header,
+.ag-pivot-off {
+    font-weight: 700 !important;
+}
+
+.ag-body-container {
+    // width: 100% !important;
+}
+
+.ag-body-viewport {
+    // overflow-x:hidden !important;
+}
+
+.ag-font-style {
+
+    user-select: text;
+}
+
+.ag-menu-list {
+    .ag-menu-option {
+        &:nth-last-child(1) {
+            display: none;
+        }
+    }
+}
+
+.ag-menu-separator {
+    display: none !important;
+}
+
+.importList,
+.monitior_list,
+.resultList,
+.defraud,
+.caseNumber {
+    .ag-menu-list {
+        .ag-menu-option {
+            &:nth-last-child(1) {
+                display: table-row;
+            }
+        }
+    }
+}
+
+
+.ag-status-bar {
+    height: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.ag-theme-material{
+  font: 400 12px "Roboto", sans-serif;
+}
+.ag-theme-material .ag-header-row{
+  user-select: none;
+}
+.ag-header-cell,.ag-cell{
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+  &:nth-child(1){
+
+    // padding-left: 20px !important;
+  }
+  &:nth-last-child(1){
+
+    // padding-right: 20px !important;
+  }
+}
+.ag-cell[col-id='caller']{
+  padding-left: 20px !important;
+}
+.ag-cell[col-id='callee']{
+  padding-left: 20px !important;
+}
+.ag-cell[col-id='number']{
+  padding-left: 20px !important;
+}
+.ag-header-cell[col-id='number']{
+  padding-left: 20px !important;
+}

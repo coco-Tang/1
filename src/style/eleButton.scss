@@ -1,0 +1,438 @@
+/* 重置所有按钮样式 */
+.el-button, .el-button:focus, .el-button--primary {
+    // background: -webkit-linear-gradient(top, #3cc0ff , #4e91ff);
+    background: -webkit-linear-gradient(top, #2eb6ff , #3d80fe);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    &:hover{
+        background: -webkit-linear-gradient(top, #36ace5, #4683e5);
+        color: #fff;
+        border: none;
+    }
+}
+
+.el-button.checked {
+    background: -webkit-linear-gradient(top, #36ace5, #4683e5);
+    color: #fff;
+    border: none;
+}
+
+.el-button.is-round:focus {
+    border-radius: 20px;
+}
+
+.el-button.is-disabled, .el-button.is-disabled:hover {
+    background-color: #b3b3b3;
+    border: none;
+    color: #dcdcdc;
+}
+
+/* tab切换的button group */
+.el-button.lbtn, .el-button.rbtn {
+    background: #fff;
+    color: #000;
+    border: solid 1px #b3b3b3;
+}
+.el-button.lbtn {
+    border-right: 0;
+}
+.el-button.rbtn {
+    border-left: 0;
+}
+
+.dialog-footer {
+    .el-button+.el-button {
+        margin-left: 20px;
+    }
+    .el-button, .el-button.checked, .el-button:hover {
+        width: 100px;
+        background-color: #48a2fe;
+        background-image: none;
+        border: solid 1px #48a2fe;
+        color: #fff;
+    }
+    // .el-button::after, .el-button.checked::after {
+    //     display: none;
+    // }
+    .el-button--default {
+        width: 100px;
+        background: #fff;
+        border: solid 1px #48a2fe;
+        color: #48a2fe;
+        &::after {
+          display: none;
+        }
+    }
+}
+
+.tabBtn.el-button--primary {
+    background: -webkit-linear-gradient(top, #36ace5, #4683e5);
+    color: #fff;
+}
+.tabBtn.el-button:focus, .tabBtn.el-button--primary:hover {
+    border: 1px solid transparent;
+}
+
+.el-button {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    box-shadow: 0px 10px 9px -7px rgba(74,156,255,.6)
+}
+.el-button.is-disabled {
+    box-shadow: 0 10px 9px -7px rgba(179,179,179,.6);
+}
+.el-button.lbtn, .el-button.rbtn, .el-dialog .dialog-footer .el-button, .quicklisten .tcontent .el-button-group.btn_group .el-button , .quicklisten1 .tcontent .el-button-group.btn_group .el-button {
+    box-shadow: none;
+}
+// .el-button::after {
+//     position: absolute;
+//     bottom: 1px;
+//     left: 10%;
+//     width: 80%;
+//     height: 5px;
+//     content: '';
+//     box-shadow: 0 4px 12px rgba(74,156,255,.7);
+// }
+// .el-button.is-disabled::after {
+//     position: absolute;
+//     top: 0;
+//     left: 10%;
+//     width: 80%;
+//     height: inherit;
+//     content: '';
+//     box-shadow: 0 4px 12px rgba(179,179,179,.7);
+// }
+// .el-button.lbtn::after, .el-button.rbtn::after {
+//     box-shadow: none;
+// }
+
+/* datetimepicker中的 el-button */
+.el-button.el-picker-panel__link-btn.el-button--text.el-button--mini {
+    width: 54px;
+    height: 26px;
+}
+.el-button.el-picker-panel__link-btn.el-button--default.el-button--mini.is-plain {
+    width: 54px;
+    height: 26px;
+    &:hover{
+        background: -webkit-linear-gradient(top, #36ace5, #4683e5);
+        border: none;
+        color: #fff;
+    }
+}
+
+@mixin my-button {
+    
+}
+
+/* 用户管理 -- 部门树 */
+// .userManagement {
+//     .el-button {
+//         width: initial;
+//     }
+//     .el-tree .el-button {
+//         background-image: none;
+//         box-shadow: none;
+//     }
+//     .el-tree .el-button::after {
+//         box-shadow: none;
+//     }
+//     .el-dialog__footer {
+//         .el-button.el-button--default {
+//             width: 100px;
+//         }
+//     }
+// }
+
+/* 对象声纹 --> 面板 第1个圆角按钮 */
+.speakers {
+    .slidePanel {
+        .panelContent {
+            .btnHead {
+                .el-button.is-round::after {
+                    left: 25%;
+                    width: 50%;
+                }
+                .el-button.is-round.is-disabled::after {
+                    top: unset;
+                    bottom: 1px;
+                    left: 25%;
+                    width: 50%;
+                    height: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* YaHei会令圆角看起来左右不等 */
+// .dialog-footer .el-button span {
+//     font-family: serif, monospace;
+// }
+
+/* keywords/phoneNumber/speakers/speechseg 搜索按钮结构变动:  .right .el-input */
+.el-input.el-input-group.el-input-group--append.el-input--suffix {
+    width: unset;
+}
+.el-button.search.el-button--default {
+    background-image: none;
+    box-shadow: none;
+}
+.el-button.search.el-button--default::after {
+    display: none;
+}
+
+/* 按钮图标 */
+.app-main .role-manage,
+.condition,
+.condition1,
+.monitor_list,
+.app-main .importVoice,
+.app-main .keywords, .app-main .speakers, .app-main .speechseg, .app-main .phoneNumber,
+.app-main .system_log, .app-main .workload, .app-main .tagCount, .app-main .annotation, .app-main .userManagement , .app-main .language_library , .app-main .train-task, .app-main .train_model{
+    .el-button.create, .el-button.edit, .el-button.refresh, .el-button.del, .el-button.online, .el-button.offline, .el-button.batchNew, .el-button.train, .el-button.export, .el-button.query, .el-button.password, .el-button.authority, .el-button.list {
+        padding-left: 28px;
+    }
+    .refresh::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-refresh.png') 10px center no-repeat;
+    }
+    .batchNew::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-batchNew.png') 10px center no-repeat;
+    }
+    .create::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-create.png') 10px center no-repeat;
+    }
+    .edit::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-edit.png') 10px center no-repeat;
+    }
+    .edit.is-disabled::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/inactive-edit.png') 10px center no-repeat;
+    }
+    .del::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-del.png') 10px center no-repeat;
+    }
+    .del.is-disabled::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/inactive-del.png') 10px center no-repeat;
+    }
+    .list::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-list.png') 10px center no-repeat;
+    }
+    .online::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-online.png') 10px center no-repeat;
+    }
+    .online.is-disabled::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/inactive-online.png') 10px center no-repeat;
+    }
+    .offline::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-offline.png') 10px center no-repeat;
+    }
+    .offline.is-disabled::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/inactive-offline.png') 10px center no-repeat;
+    }
+    .train::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-train.png') 10px center no-repeat;
+    }
+    .train.is-disabled::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/inactive-train.png') 10px center no-repeat;
+    }
+    .alert::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-alert.png') 10px center no-repeat;
+    }
+    .export::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-export.png') 10px center no-repeat;
+    }
+    .query::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-query.png') 10px center no-repeat;
+    }
+    .password::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-password.png') 10px center no-repeat;
+    }
+    .password.is-disabled::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/inactive-password.png') 10px center no-repeat;
+    }
+    .authority::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/active-authority.png') 10px center no-repeat;
+    }
+    .authority.is-disabled::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        content: '';
+        background: url('../static/images/inactive-authority.png') 10px center no-repeat;
+    }
+}
+
+.system {
+    .speechseg, .speakers, .keywords, .phoneNumber, .userManagement {
+        .search {
+            .el-input-group__append {
+                padding: 0;
+                .el-button {
+                    padding: 0 5px;
+                    margin: 0;
+                    height: 28px;
+                }
+            }
+        }
+    }
+}
+
+.condition,.condition1 {
+    .btn .el-button.myBtn {
+        height: 30px;
+        margin-top: 5px;
+        padding: 0 10px;
+        border-color: unset;
+        background: -webkit-linear-gradient(top, #3cc0ff, #4e91ff);
+        span {
+            text-shadow: 0px 2px 4px #4161b9;
+        }
+        &:hover {
+            background: -webkit-linear-gradient(top, #36ace5, #4683e5)
+        }
+      }
+}
+
+// .el-pager li:nth-last-child(1){
+//     display:none;
+// }
+.el-pager li.btn-quicknext+li{
+    display:none;
+}
+.el-table__empty-text{
+    min-height: 115px;
+}
+
+
+.userManagement,.role-manage{
+    .el-button.edit-btn{
+        padding: 0 10px;
+    }
+}

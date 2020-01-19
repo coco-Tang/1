@@ -1,0 +1,5 @@
+{
+  "BASEURL":"http://192.168.1.243:8081",
+  "QL_BASEURL":"http://192.168.1.243:9000",
+  "PROMETHEUS_BASEURL":"http://172.17.0.143:9090"
+}

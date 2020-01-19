@@ -1,0 +1,51 @@
+.el-dialog{
+    .el-dialog__headerbtn{
+        top: 10px;
+        right: 10px;
+    }
+    .el-dialog__title{
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .el-dialog__header{
+        // padding: 10px 30px 10px 30px;
+        padding: 20px 30px 0px 30px;
+    }
+    .el-dialog__body{
+        padding: 20px 30px;
+    }
+    .el-dialog__footer{
+        // margin-top: -20px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .el-input__inner{
+        background-color: #fbfbfb;
+        border: 1px solid #dddeea;
+        height: 30px !important;
+    }
+}
+.condition,.condition1 {
+    .el-dialog {
+        width: 90%;
+    }
+}
+.keywordSelect, .speakerSelect{
+    .el-dialog__header{
+        padding-bottom: 20px;
+    }
+}
+.history{
+    .keywordSelect, .speakerSelect{
+        .el-dialog__header{
+            padding-bottom: 0px;
+        }
+    }
+}
+.videoSearch, .condition, .monitor{
+    .speakerSelect{
+        .el-dialog__header{
+            padding-bottom: 15px;
+        }
+    }
+}

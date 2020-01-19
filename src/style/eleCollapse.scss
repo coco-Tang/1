@@ -1,0 +1,23 @@
+/*
+* @Author: cjq
+* @Date:   2019-08-21 15:13:29
+* @Last Modified by:   cjq
+* @Last Modified time: 2019-08-21 15:23:25
+*/
+.el-collapse{
+	background-color: #767783 !important;
+	border-top: 1px solid #1f1f2f !important;
+}
+.el-collapse-item__header{
+	background-color: #767783 !important;
+	// border-top: 1px solid #1f1f2f !important;
+	border-bottom: 1px solid #1f1f2f !important;
+	height: 30px !important;
+}
+.el-collapse-item__content{
+	background-color: #767783 !important;
+	padding: 10px 0 !important;
+}
+.el-collapse-item__wrap{
+	border-bottom: 1px solid #1f1f2f !important;
+}

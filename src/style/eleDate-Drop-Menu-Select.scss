@@ -1,0 +1,119 @@
+/*
+ * Datepicker
+ */
+.el-picker-panel.el-date-range-picker.el-popper.has-sidebar.has-time {
+    .el-button.el-picker-panel__link-btn.el-button--default.el-button--mini.is-disabled.is-plain {
+        background-color: #b3b3b3;
+        color: #dcdcdc;
+        &:hover {
+            background-image: none;
+        }
+    }
+}
+
+.condition,.condition1 ,.history {
+    .topbox{
+        .el-date-editor--datetimerange.el-input,
+        .el-date-editor--datetimerange.el-input__inner {
+            width: 100%;
+            margin-top: 5px;
+        }
+        
+    }
+}
+
+.importVoice {
+    .importVoiceDialog {
+        .el-date-editor .el-range__icon,
+        .el-date-editor .el-range__close-icon {
+            line-height: 0;
+        }
+        .el-date-editor .el-range-separator {
+            line-height: 22px;
+        }
+    }
+}
+
+
+/*
+ * Dropdown
+ */
+.navBar{
+	.el-dropdown {
+        color: unset ;
+    }
+}
+
+.el-dropdown-menu__item {
+    padding-left: 33px !important;
+    font-size: 12px !important;
+}
+.el-dropdown-menu__item.item-player {
+    background: url('./static/images/item-player.png') no-repeat 17px center ;
+}
+.el-dropdown-menu__item.item-voice {
+    background: url('./static/images/item-voice.png') no-repeat 17px center ;
+}
+.el-dropdown-menu__item.item-password {
+    background: url('./static/images/item-password.png') no-repeat 17px center ;
+}
+.el-dropdown-menu__item.item-logout {
+    background: url('./static/images/item-logout.png') no-repeat 17px center ;
+}
+/* element-ui v.2.6.1 bug fix; overflow-x/overflow-y 任一值为auto/hidden/overlay/scroll, 则会导致无三角箭头 */
+.el-dropdown-menu.el-popper {
+    overflow: initial;
+}
+
+
+/*
+ * Menu
+ */
+.myApp_nav {
+	.el-menu {
+	    border-right: none ; 
+	}
+    .el-menu-item,
+    .el-submenu__title,
+    .el-submenu .el-menu-item{
+        height: 40px ;
+        line-height: 40px ;
+        min-width: 180px;
+	}
+}
+.navBar {
+	.el-menu-demo {
+		margin-left: 1000px ;
+		width: 100% ;
+		li.el-menu-item {
+			width: 160px ;
+		}
+	}
+}
+
+
+/*
+ * Select
+ */
+// .condition {
+//     .topbox {
+//         /* 话单级别 */
+//         .el-select .el-tag {
+//             margin-left: 3px; // 宽1600px时能在一格内不换行
+//         }
+//         div.el-select.el-select--small {
+//             width: 100% !important;
+//         }
+//         .el-select__tags {
+//             max-width: none !important;
+//         }
+
+//         .item {
+//             .group {
+//                 .el-select {
+//                     flex-grow: 1;
+//                 }
+//             }
+//         }
+//     }
+// }

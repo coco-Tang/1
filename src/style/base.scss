@@ -1,0 +1,23 @@
+/*
+* @Author: cjq
+* @Date:   2019-03-12 15:00:48
+* @Last Modified by:   cjq
+* @Last Modified time: 2019-04-11 10:56:22
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body,#app{
+  height: 100%;
+}
+ul,li {
+  list-style: none;
+}
+.hidden{
+  display: none !important;
+}
+.show{
+  display: block !important;
+}

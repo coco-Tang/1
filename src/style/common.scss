@@ -1,0 +1,376 @@
+/*
+* @Author: cjq
+* @Date:   2019-04-02 09:32:20
+* @Last Modified by:   Administrator
+* @Last Modified time: 2019-12-05 11:01:28
+*/
+@mixin my-form() {
+  .el-form-item, .el-form-item__label, .el-form-item__content, .el-input, .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+  }
+  .el-select {
+    width: 100%;
+    margin-top: 0;
+  }
+  .el-input-number {
+    width: 100%;
+  }
+  .el-input-number__increase, .el-input-number__decrease {
+    width: 50px;
+    height: 15px;
+  }
+  .el-input-number__decrease {
+    top: 15px;
+  }
+  .el-input-number__increase {
+    top: 2px;
+  }
+  em {
+    font-style: normal;
+  }
+  .el-form-item.undertake {
+    height: 80px;
+    line-height: 80px;
+  }
+  ul.undertake {
+    display: flex;
+    li {
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px;
+      em {
+        width: 40px;
+        flex-shrink: 0;
+        margin-bottom: 10px;
+        &.person {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+.item {
+  position: relative;
+  // width: 24%;
+  width: 25%;
+  // height: 50px;
+  height: 40px;
+  // margin: 0 .5%;
+  display: flex;
+  flex-direction: column;
+  // padding: 16px 20px 16px 20px;
+  // background-color: #f2f2f8;
+  line-height: 40px;
+  .group {
+    display: flex;
+    .title {
+      flex-shrink: 0;
+      width: 80px;
+      font-size: 12px;
+      color: #a6a6a6;
+      margin-bottom: 10px;
+      text-align: right;
+      padding-right: 10px;
+    }
+  }
+  .content {
+    display: flex;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(244,244,244,1);
+    border-radius: 20px;
+  }
+}
+
+/**
+ * topbox类在vue文件中仅出现5处, dataCenter/pushCount.vue, recognize/fileRecognize.vue, search/condition - 副本.vue, search/condition.vue, voiceprint/management - 副本.vue
+ * 目前仅search/condition.vue中有用
+ */
+.topbox {
+  // box-shadow: 0px 0px 10px #888888;
+  border-radius: 5px;
+  div.title {
+    color: #535353;
+  }
+  .el-date-editor .el-range-input {
+    color: #282828;
+  }
+  .el-input__inner {
+    height: 30px;
+    color: #282828;
+    border-color: #d5d8e6;
+  }
+  .el-button {
+    // padding: 7px 10px;
+    height: 30px;
+    padding: 0 14px;
+  }
+  // height: 400px;
+  width: 100%;
+  padding: 10px;
+//   overflow: auto;
+  flex-shrink: 0;
+  background-color: #fff;
+  .topbox_head {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    // padding: 0 .5%;
+    margin-bottom: calc( 20px - .5%); // margin-top: calc( .5% - 20px);
+    .right {
+      // width: 240px;
+      .lbtn {
+        border-radius: 20px 0 0 20px;
+      }
+      .rbtn {
+        // width: 112px;
+        border-radius: 0 20px 20px 0;
+      }
+    }
+  }
+  .topbox_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.table {
+  // margin-top: 20px;
+  padding: 10px 20px 20px;
+  // padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #fff;
+  // box-shadow: 0px 0px 10px #888888;
+  border-radius: 3px;
+  .table_head {
+    flex-grow: 0;
+    display: flex;
+    justify-content: space-between;
+    // line-height: 40px;
+    // height: 40px;
+    margin-bottom: 10px;
+    // height: 30px;
+    // line-height: 30px;
+    .title {
+      // width: 56px;
+      width: 50px;
+      // line-height: 30px;
+      // font-weight: 700;
+      // font-size: 14px;
+      font-size: 12px;
+    }
+    .right {
+      line-height: 30px;
+      margin-left: auto;
+      padding-top: 5px;
+      position: relative;
+      flex-wrap: wrap;
+      .firstitem {
+        margin-left: 10px;
+        margin-bottom: 5px;
+      }
+      ul {
+        flex-wrap: wrap;
+        li{
+          margin-bottom: 8px;
+        }
+      }
+    //   .el-input.search {
+    //     &:nth-child(1) {
+    //       // width: 180px;
+    //       width: 150px;
+    //     }
+    //     &:nth-child(2) {
+    //       // width: 180px;
+    //       width: 150px;
+    //     }
+    //   }
+    }
+    .left {
+      // width: 80px;
+      flex-shrink: 0;
+      // line-height: 30px;
+      line-height: 40px;
+      margin-right: 30px;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .table_content {
+    flex-grow: 1;
+    // border-right: 1px solid #000;
+    // border-left: 1px solid #000;
+    // border: 1px solid rgb(224, 224, 224);
+    box-sizing: border-box;
+    // height: 100%;
+    display: flex;
+    .ag-grid {
+        flex-grow: 1;
+    }
+  }
+  .table_pagination {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.app-main {
+  .keywords, .languageMonitor, .speakers, .speechseg, .timeslice, .phoneNumber, .casemanagement, .importVoice, .language_library, .train_model, .train-task{
+    .el-input__inner, .el-button {
+      height: 30px;
+    }
+    .el-input {
+      // margin-right: 10px;
+    }
+    .el-button {
+      padding: 0 14px;
+    }
+    .dialog-footer { // languageMonitor的.dialog-footer.el-button不做padding限定, 但languageMonitor.vue已废弃
+      .el-button {
+        padding: 8px 20px;
+      }
+    }
+  }
+  .languageMonitor {
+    .assignDialog {
+      @include my-form();
+    }
+  }
+  .speechseg {
+    .speechsegDialog {
+      @include my-form();
+    }
+  }
+  .speakers {
+    .speakerDialog {
+      @include my-form();
+    }
+    .importSpeakerDialog {
+      @include my-form();
+    }
+  }
+  .keywords {
+    .keywordDialog {
+      @include my-form();
+    }
+  }
+  .phoneNumber {
+    .phoneDialog {
+      @include my-form();
+    }
+    .importPhoneBatchDialog{
+      @include my-form();
+    }
+  }
+  
+  .userManagement {
+    .el-button {
+      padding: 0 14px;
+    }
+    .userDialog {
+      @include my-form();
+      .inputNumber {
+          display: flex;
+      }
+    }
+    // .departmentDialog{
+    //   @include my-form();
+    // }
+    // .sectionofficeDialog{
+    //   @include my-form();
+    // }
+    .dialog-footer {
+      .el-button {
+        padding: 8px 20px;
+      }
+    }
+
+    
+  }
+  .userManagement, .role-manage, .tagCount, .system_log, .workload, .annotation {
+    .el-input__inner, .el-button {
+      height: 30px;
+    }
+    .el-button {
+      padding: 0 14px; // padding: 7px 10px;
+    }
+    .table_head {
+      .el-input {
+      // width: 150px;
+      }
+    }
+    .el-range-separator, .el-icon-time, .el-range__close-icon {
+      line-height: 19px;
+    }
+  }
+  .userSelect .btnGroup .el-button+.el-button {
+    margin-left: 0;
+  }
+
+
+}
+
+.el-table__header tr,
+  .el-table__header th {
+    padding: 0 !important;
+    height: 40px;
+}
+
+.el-table__body tr,
+  .el-table__body td {
+    padding: 0 !important;
+    height: 40px;
+}
+
+.warning-row {
+  background-color: #ffe3a8 !important;
+}
+
+@media (max-width: 1800px) {
+  .condition,.condition1 {
+    .item1 {
+      // width: 49%;
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .condition,.condition1 {
+    .file_item {
+      // width: 49%;
+      width: 50%;
+    }
+    .taskList {
+      .el-dialog {
+        margin-top: 0 !important; // taskList的dialog高500px, 在纵分辨率768px下, 默认的15vh不适用, 姑且改用这个
+      }
+    }
+  }
+}
+
+.v-modal{
+    z-index: 7000 !important;
+}

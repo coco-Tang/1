@@ -1,0 +1,95 @@
+.el-input-number.is-controls-right .el-input-number__decrease,
+.el-input-number.is-controls-right .el-input-number__increase{
+    line-height: 15px !important;
+}
+  
+.el-input__icon{
+    line-height: 30px;
+}
+
+.el-input__inner{
+    font-size: 12px !important;
+}
+input::-webkit-input-placeholder{
+    color: #aaa !important;
+    font-size: 12px !important;
+}
+
+.condition, .condition1 ,.history ,.monitor{
+    .topbox {
+        /* 通话时长 */
+        div.el-input.el-input--small input.el-input__inner {
+            height: 30px !important; // 其他input都是30px
+        }
+        .el-input__inner,
+        .el-range-separator,
+        .el-range-input,
+        .el-range__icon,
+        .el-range__close-icon {
+            line-height: 14px;
+        }
+        // .el-input-number {
+        //     width: 40%;
+        //     line-height: 40px;
+        // }
+        .el-input-number__decrease,
+        .el-input-number__increase {
+            line-height: 14px !important;
+        }
+        .el-input-number__increase {
+            top: 7px !important;
+        }
+        .el-input-number__decrease {
+            bottom: 5px !important;
+        }
+    //   .min-num::before, .max-num::before { // 没什么用
+    //     position: absolute;
+    //     content: '请输入';
+    //     z-index: 1;
+    //     font-size: 12px;
+    //     color: #909399;
+    //     padding-left: 15px;
+    //   } 
+    }
+    
+    .item {
+        .group {
+            .el-input {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+.condition1,.monitor,.history{
+    .topbox{
+        .el-input-number__increase {
+            top: 6px !important;
+        }
+        .el-input-number__decrease {
+            bottom: 6px !important;
+        }
+    }
+    
+}
+.language_library,.train-task,.train_model{
+    .table{
+        .table_head{
+            .bottom{
+                .el-radio-button__inner{
+                    padding: 8px !important;
+                }
+            }
+        }
+    }
+}
+textarea{
+    font-size: 12px !important;
+}
+.importVoice{
+    .el-checkbox{
+        height: 30px;
+        line-height: 30px;
+    }
+}
+

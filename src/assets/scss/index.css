@@ -1,0 +1,70 @@
+.common {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  /* 设置滚动条的样式 */
+  /* 滚动槽 */
+  /* 滚动条滑块 */
+}
+.common::-webkit-scrollbar {
+  width: 10px;
+  background-color: #bfbfbf;
+}
+.common::-webkit-scrollbar-track {
+  box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.common::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  height: 16px;
+  /* background: rgba(0, 0, 0, 0.1); */
+  background: #7d7d7d;
+  box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+}
+.common .part {
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.common .part .title {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+  background-color: #515a6e;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  color: #eee;
+}
+.common .part .chart {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 0 0 10px 10px;
+  border-top: none;
+}
+.common .part .chart .arrows-wrap {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.common .part .chart .arrows-wrap .arrow {
+  width: 100px;
+  height: 100%;
+  padding: 5px;
+}
+.common .part .chart .tab-pane {
+  width: 100%;
+  height: 350px;
+  background-color: #000;
+}
+.common .part .chart .chart-line {
+  width: 90%;
+  min-height: 380px;
+  text-align: center;
+}
